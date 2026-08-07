@@ -30,6 +30,8 @@ Di tutorial ini, kamu akan mengedit dan mengkustomisasi template website portofo
 2. Pilih **Template Gelap** (hitam), lalu klik tombol download.
 3. File yang akan terunduh bernama **`template-portofolio-gelap.zip`**.
 
+![](gambar/extract-hitam.png)
+
 ### Extract File ZIP
 
 1. Temukan file `template-portofolio-gelap.zip` di folder **Downloads**.
@@ -78,6 +80,8 @@ Buka file **`portofolio-hitam/index.html`** di Text Editor (misalnya VS Code), l
 <meta property="og:title" content="Portofolio - Budi Santoso" />
 ```
 
+#### Hasil:
+![](gambar/ganti-title.png)
 ---
 
 ### Langkah 2: Mengubah Nama & Deskripsi Hero/Profil
@@ -100,9 +104,12 @@ Cari tag `<section id="profil" class="hero">`:
 <p class="greeting">Halo, saya</p>
 <h1>Budi <em>Santoso</em></h1>
 <p>
-   Siswa SMAN 10 TAMSEL yang menyukai dunia pemrograman web, desain grafis, dan pembuatan aplikasi digital sederhana.
+   Siswa SMAN 10 Tambun Selatan yang menyukai dunia pemrograman web, desain grafis, dan pembuatan aplikasi digital sederhana.
 </p>
 ```
+
+#### Hasil:
+![](gambar/nama-deskripsi-hitam.png)
 
 > **Catatan:** Template hitam menggunakan tag `<em>` untuk memberi aksen warna oranye pada sebagian nama. Sesuaikan mana kata yang ingin kamu tonjolkan.
 
@@ -179,6 +186,9 @@ Cari bagian `<section id="pendidikan" class="section">`. Di template hitam, seti
 </article>
 ```
 
+#### Hasil:
+![](gambar/jenjang-hitam.png)
+
 ---
 
 ### Langkah 5: Mengubah & Menambah Daftar Proyek
@@ -230,6 +240,9 @@ Cari bagian `<section id="proyek" class="section">`. Di template hitam, setiap p
 
 #### Cara Menambah Proyek Baru:
 Duplikat satu blok `<article class="card project-card">...</article>` lalu paste tepat di bawah proyek sebelumnya (sebelum `</div>` penutup `card-grid`).
+
+#### Hasil:
+![](gambar/proyek-hitam.png)
 
 ---
 
@@ -316,6 +329,9 @@ Ganti dengan namamu:
 </p>
 ```
 
+#### Hasil:
+![](gambar/kontak-hitam.png)
+
 ---
 
 ### Langkah 8: Mengkustomisasi Tema Warna (CSS Variable)
@@ -357,6 +373,9 @@ Cari bagian `<style>` di dalam `<head>`:
    --shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
 ```
+
+#### Hasil:
+![](gambar/css-hitam.png)
 
 ---
 

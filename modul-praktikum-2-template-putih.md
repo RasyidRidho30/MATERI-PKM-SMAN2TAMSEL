@@ -37,6 +37,8 @@ Di tutorial ini, kamu akan mengedit dan mengkustomisasi template website portofo
 3. Tentukan lokasi tujuan extract, misalnya di folder `Dokumen` atau `Desktop`.
 4. Klik **Extract**. Setelah selesai, akan muncul folder bernama **`portofolio-putih/`**.
 
+![](gambar/extract-putih.png)
+
 ### Struktur Folder Hasil Extract
 
 ```
@@ -78,6 +80,9 @@ Buka file **`portofolio-putih/index.html`** di Text Editor (misalnya VS Code), l
 <meta property="og:title" content="Portofolio - Budi Santoso" />
 ```
 
+#### Hasil:
+![](gambar/ganti-title.png)
+
 ---
 
 ### Langkah 2: Mengubah Nama & Deskripsi Hero/Profil
@@ -100,10 +105,13 @@ Cari tag `<section id="profil" class="hero">`:
 <p class="greeting">Halo, saya</p>
 <h1>Budi Santoso</h1>
 <p>
-   Siswa SMAN 10 TAMSEL yang menyukai dunia pemrograman web, desain grafis, dan pembuatan aplikasi digital sederhana.
+   Siswa SMAN 10 Tambun Selatan yang menyukai dunia pemrograman web, desain grafis, dan pembuatan aplikasi digital sederhana.
 </p>
 ```
 
+
+#### Hasil:
+![](gambar/nama-deskripsi-putih.png)
 ---
 
 ### Langkah 3: Mengubah Foto Profil
@@ -171,6 +179,9 @@ Cari bagian `<section id="pendidikan" class="section education">`. Di dalamnya t
 </article>
 ```
 
+#### Hasil:
+![](gambar/jenjang-putih.png)
+
 ---
 
 ### Langkah 5: Mengubah & Menambah Daftar Proyek
@@ -222,6 +233,9 @@ Cari bagian `<section id="proyek" class="section">`. Setiap proyek dibungkus ole
 
 #### Cara Menambah Proyek Baru:
 Duplikat satu blok `<article class="project-card">...</article>` lalu paste tepat di bawah proyek sebelumnya (sebelum `</div>` penutup `project-grid`).
+
+#### Hasil:
+![](gambar/proyek-putih.png)
 
 ---
 
@@ -306,6 +320,9 @@ Ganti dengan namamu:
 </p>
 ```
 
+#### Hasil:
+![](gambar/kontak-putih.png)
+
 ---
 
 ### Langkah 8: Mengkustomisasi Tema Warna (CSS Variable)
@@ -341,6 +358,10 @@ Cari bagian `<style>` di dalam `<head>`:
    --shadow: 0 8px 30px rgba(16, 42, 67, 0.08);
 }
 ```
+
+
+#### Hasil:
+![](gambar/css-putih.png)
 
 ---
 
