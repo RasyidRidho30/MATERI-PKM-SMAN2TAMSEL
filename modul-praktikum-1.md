@@ -1,6 +1,6 @@
 # Tutorial: Membuat Kalkulator & Konversi Suhu Sederhana
 
-### Untuk Pemula — HTML, CSS, JavaScript
+### Modul — HTML, CSS, JavaScript
 
 Di tutorial ini, kita akan membuat **2 file HTML terpisah**:
 
