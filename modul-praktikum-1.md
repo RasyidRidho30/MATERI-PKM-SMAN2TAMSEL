@@ -206,8 +206,6 @@ Terakhir, tambahkan `<script>` sebelum tag penutup `</body>`:
 
 ![Kalkulator sudah berfungsi penuh, menampilkan hasil perhitungan di layar](gambar/kalkulator3.png)
 
-<iframe src="https://username.github.io/kalkulator.html" width="100%" height="400px" frameborder="0"></iframe>
-
 Ini tahap terakhir — kalkulator **sudah berfungsi sepenuhnya**. Coba klik beberapa angka dan operator, misalnya `12 + 8`, lalu tekan tombol `=`. Layar akan menampilkan hasilnya, yaitu `20`. Tombol `C` akan mengosongkan layar, dan tombol `Hapus` akan menghapus satu karakter terakhir saja — cocok kalau salah ketik.
 
 ### Kode Lengkap kalkulator.html
