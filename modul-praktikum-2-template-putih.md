@@ -1,6 +1,6 @@
 # Tutorial: Mengedit & Kustomisasi Template Portofolio Putih
 
-### Untuk Pemula — HTML, CSS, JavaScript
+### Modul — HTML, CSS, JavaScript
 
 Di tutorial ini, kamu akan mengedit dan mengkustomisasi template website portofolio siap pakai yang ada di folder **`portofolio-putih/`**. Kamu akan mengubah nama, deskripsi, foto profil, riwayat pendidikan, daftar proyek beserta gambarnya, informasi kontak, hingga warna tampilan website sesuai identitas kamu sendiri.
 
@@ -24,22 +24,35 @@ Di tutorial ini, kamu akan mengedit dan mengkustomisasi template website portofo
 
 ## 1. Persiapan & Struktur File
 
-File template portofolio sudah tersedia di folder `portofolio-putih/` dengan struktur sebagai berikut:
+### Download Template
+
+1. Buka website galeri template di: **https://template-portofolio-pkm.vercel.app/**
+2. Pilih **Template Terang** (putih), lalu klik tombol download.
+3. File yang akan terunduh bernama **`template-portofolio-terang.zip`**.
+
+### Extract File ZIP
+
+1. Temukan file `template-portofolio-terang.zip` di folder **Downloads**.
+2. Klik kanan file tersebut, lalu pilih **Extract All...** (Windows) atau **Extract Here**.
+3. Tentukan lokasi tujuan extract, misalnya di folder `Dokumen` atau `Desktop`.
+4. Klik **Extract**. Setelah selesai, akan muncul folder bernama **`portofolio-putih/`**.
+
+### Struktur Folder Hasil Extract
 
 ```
 portofolio-putih/
   ├── index.html        <-- File HTML utama yang akan kita edit
   └── img/
-      ├── profile.jpg   <-- Foto profil
-      ├── proyek1.jpeg  <-- Gambar proyek 1
-      ├── proyek2.jpeg  <-- Gambar proyek 2
-      └── proyek3.jpeg  <-- Gambar proyek 3
+      ├── profile.jpg   <-- Foto profil placeholder
+      ├── proyek1.jpeg  <-- Gambar proyek 1 placeholder
+      ├── proyek2.jpeg  <-- Gambar proyek 2 placeholder
+      └── proyek3.jpeg  <-- Gambar proyek 3 placeholder
 ```
 
-> **Persiapan:**
+> **Persiapan sebelum mulai mengedit:**
 > 1. Siapkan **foto profil kamu** (format `.jpg` atau `.png`).
 > 2. Siapkan **gambar untuk setiap proyek** kamu (format `.jpg`, `.jpeg`, atau `.png`).
-> 3. Simpan semua gambar tersebut di dalam folder `portofolio-putih/img/`.
+> 3. Simpan semua gambar tersebut ke dalam folder `portofolio-putih/img/`.
 
 ---
 
