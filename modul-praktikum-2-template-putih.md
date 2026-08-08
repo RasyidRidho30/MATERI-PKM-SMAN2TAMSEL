@@ -2,7 +2,7 @@
 
 ### Modul — HTML, CSS, JavaScript
 
-Di tutorial ini, kamu akan mengedit dan mengkustomisasi template website portofolio siap pakai yang ada di folder **`portofolio-putih/`**. Kamu akan mengubah nama, deskripsi, foto profil, riwayat pendidikan, daftar proyek beserta gambarnya, informasi kontak, hingga warna tampilan website sesuai identitas kamu sendiri.
+Di tutorial ini, kamu akan mengedit dan mengkustomisasi template website portofolio siap pakai yang ada di folder **`portofolio-putih/`**. Kamu akan mengubah nama, deskripsi, foto profil, riwayat pendidikan, daftar proyek beserta gambarnya, daftar prestasi, pengalaman organisasi, informasi kontak, hingga warna tampilan website sesuai identitas kamu sendiri.
 
 ---
 
@@ -16,8 +16,10 @@ Di tutorial ini, kamu akan mengedit dan mengkustomisasi template website portofo
    - [Langkah 4: Mengubah Riwayat Pendidikan](#langkah-4-mengubah-riwayat-pendidikan)
    - [Langkah 5: Mengubah & Menambah Daftar Proyek](#langkah-5-mengubah--menambah-daftar-proyek)
    - [Langkah 6: Mengubah Gambar Proyek](#langkah-6-mengubah-gambar-proyek)
-   - [Langkah 7: Mengubah Informasi Kontak & Footer](#langkah-7-mengubah-informasi-kontak--footer)
-   - [Langkah 8: Mengkustomisasi Tema Warna (CSS Variable)](#langkah-8-mengkustomisasi-tema-warna-css-variable)
+   - [Langkah 7: Mengubah Daftar Prestasi](#langkah-7-mengubah-daftar-prestasi)
+   - [Langkah 8: Mengubah Daftar Organisasi](#langkah-8-mengubah-daftar-organisasi)
+   - [Langkah 9: Mengubah Informasi Kontak & Footer](#langkah-9-mengubah-informasi-kontak--footer)
+   - [Langkah 10: Mengkustomisasi Tema Warna (CSS Variable)](#langkah-10-mengkustomisasi-tema-warna-css-variable)
 3. [Cara Menjalankan & Memeriksa Hasil](#3-cara-menjalankan--memeriksa-hasil)
 
 ---
@@ -68,16 +70,16 @@ Buka file **`portofolio-putih/index.html`** di Text Editor (misalnya VS Code), l
 
 #### Letak Kode (Baris 6 & 11):
 ```html
-<title>Portofolio - Nama Anda</title>
+<title>Portofolio — Nama Anda</title>
 ...
-<meta property="og:title" content="Portofolio - Nama Anda" />
+<meta property="og:title" content="Portofolio — Nama Anda" />
 ```
 
 #### Perubahan (Ganti dengan nama kamu):
 ```html
-<title>Portofolio - Budi Santoso</title>
+<title>Portofolio — Budi Santoso</title>
 ...
-<meta property="og:title" content="Portofolio - Budi Santoso" />
+<meta property="og:title" content="Portofolio — Budi Santoso" />
 ```
 
 #### Hasil:
@@ -87,7 +89,7 @@ Buka file **`portofolio-putih/index.html`** di Text Editor (misalnya VS Code), l
 
 ### Langkah 2: Mengubah Nama & Deskripsi Hero/Profil
 
-#### Letak Kode (Baris 562 - 568):
+#### Letak Kode (Baris 674 - 680):
 Cari tag `<section id="profil" class="hero">`:
 
 ```html
@@ -105,7 +107,7 @@ Cari tag `<section id="profil" class="hero">`:
 <p class="greeting">Halo, saya</p>
 <h1>Budi Santoso</h1>
 <p>
-   Siswa SMAN 10 Tambun Selatan yang menyukai dunia pemrograman web, desain grafis, dan pembuatan aplikasi digital sederhana.
+   Siswa SMAN 2 Tambun Selatan yang menyukai dunia pemrograman web, desain grafis, dan pembuatan aplikasi digital sederhana.
 </p>
 ```
 
@@ -116,7 +118,7 @@ Cari tag `<section id="profil" class="hero">`:
 
 ### Langkah 3: Mengubah Foto Profil
 
-#### Letak Kode (Baris 578 - 585):
+#### Letak Kode (Baris 690 - 697):
 Cari tag `<div class="hero-image">`:
 
 ```html
@@ -148,7 +150,7 @@ Ganti `img/profile.jpg` dengan nama file fotomu yang sudah disalin ke folder `po
 
 ### Langkah 4: Mengubah Riwayat Pendidikan
 
-#### Letak Kode (Baris 597 - 619):
+#### Letak Kode (Baris 709 - 731):
 Cari bagian `<section id="pendidikan" class="section education">`. Di dalamnya terdapat beberapa elemen `<article class="timeline-item">`:
 
 ```html
@@ -165,7 +167,7 @@ Cari bagian `<section id="pendidikan" class="section education">`. Di dalamnya t
 ```html
 <article class="timeline-item">
    <div class="timeline-header">
-      <h3>SMAN 10 Tambun Selatan</h3>
+      <h3>SMAN 2 Tambun Selatan</h3>
       <span class="year">2024 — Sekarang</span>
    </div>
    <p class="institution">Kelas 11 IPA / IPS</p>
@@ -186,7 +188,7 @@ Cari bagian `<section id="pendidikan" class="section education">`. Di dalamnya t
 
 ### Langkah 5: Mengubah & Menambah Daftar Proyek
 
-#### Letak Kode (Baris 631 - 684):
+#### Letak Kode (Baris 742 - 797):
 Cari bagian `<section id="proyek" class="section">`. Setiap proyek dibungkus oleh elemen `<article class="project-card">`:
 
 ```html
@@ -256,7 +258,7 @@ Template sudah menyediakan 3 file gambar placeholder di folder `portofolio-putih
 
 **Metode 2 — Simpan dengan nama baru lalu ubah kode:**
 1. Salin gambar proyekmu ke folder `portofolio-putih/img/` dengan nama berbeda, misalnya `kalkulator.png`.
-2. Di dalam `index.html`, cari baris berikut (Baris 632 - 634):
+2. Di dalam `index.html`, cari baris berikut (Baris 744 - 746):
    ```html
    <img
       src="img/proyek1.jpeg"
@@ -270,17 +272,109 @@ Template sudah menyediakan 3 file gambar placeholder di folder `portofolio-putih
       alt="Tampilan Kalkulator Sederhana"
    />
    ```
-4. Lakukan hal yang sama untuk proyek kedua (Baris 650 - 652) dan ketiga (Baris 668 - 670).
+4. Lakukan hal yang sama untuk proyek kedua (Baris 762 - 764) dan ketiga (Baris 780 - 782).
 
 > **Catatan:** Pastikan nama file tidak mengandung spasi. Gunakan tanda hubung (`-`) atau garis bawah (`_`) sebagai pengganti spasi. Contoh: `proyek-kalkulator.jpg` bukan `proyek kalkulator.jpg`.
 
 ---
 
-### Langkah 7: Mengubah Informasi Kontak & Footer
+### Langkah 7: Mengubah Daftar Prestasi
+
+Template putih memiliki section **Prestasi** dengan tampilan daftar berformat baris (*list row*). Setiap prestasi ditampilkan dengan nomor urut, judul, keterangan, dan tahun.
+
+#### Letak Kode (Baris 808 - 841):
+Cari bagian `<section id="prestasi" class="section prestasi">`. Setiap entri prestasi dibungkus oleh elemen `<div class="prestasi-row">`:
+
+```html
+<div class="prestasi-row">
+   <span class="prestasi-watermark">01</span>
+   <div class="prestasi-body">
+      <h3>Juara 1 Olimpiade Sains Nasional</h3>
+      <p>Bidang Informatika &mdash; Tingkat Provinsi</p>
+   </div>
+   <span class="year">2023</span>
+</div>
+```
+
+#### Perubahan (Sesuaikan dengan prestasi kamu):
+```html
+<div class="prestasi-row">
+   <span class="prestasi-watermark">01</span>
+   <div class="prestasi-body">
+      <h3>Juara 1 Lomba Web Design Tingkat Kota</h3>
+      <p>Kategori SMA &mdash; Diselenggarakan oleh Dinas Pendidikan</p>
+   </div>
+   <span class="year">2025</span>
+</div>
+<div class="prestasi-row">
+   <span class="prestasi-watermark">02</span>
+   <div class="prestasi-body">
+      <h3>Peserta OSN Bidang Informatika</h3>
+      <p>Seleksi Tingkat Kabupaten Bekasi</p>
+   </div>
+   <span class="year">2024</span>
+</div>
+```
+
+#### Cara Menambah Prestasi Baru:
+Duplikat satu blok `<div class="prestasi-row">...</div>` lalu paste di bawah prestasi sebelumnya. Jangan lupa ubah nomor urut pada `<span class="prestasi-watermark">` (misalnya `03`, `04`, dst.).
+
+#### Hasil:
+![](gambar/prestasi-putih.png)
+
+---
+
+### Langkah 8: Mengubah Daftar Organisasi
+
+Template putih memiliki section **Organisasi** yang menampilkan daftar pengalaman berorganisasi dalam format kartu grid.
+
+#### Letak Kode (Baris 852 - 877):
+Cari bagian `<section id="organisasi" class="section">`. Setiap entri organisasi dibungkus oleh elemen `<div class="org-item">`:
+
+```html
+<div class="org-item">
+   <div class="org-meta">
+      <h3>Himpunan Mahasiswa Teknik Informatika</h3>
+      <p class="org-role">Ketua Umum</p>
+      <p class="org-place">Universitas Contoh Indonesia</p>
+   </div>
+   <span class="year">2021 — 2022</span>
+</div>
+```
+
+#### Perubahan (Sesuaikan dengan pengalaman organisasimu):
+```html
+<div class="org-item">
+   <div class="org-meta">
+      <h3>OSIS SMAN 2 Tambun Selatan</h3>
+      <p class="org-role">Anggota Divisi Seni & Budaya</p>
+      <p class="org-place">SMAN 2 Tambun Selatan</p>
+   </div>
+   <span class="year">2024 — Sekarang</span>
+</div>
+<div class="org-item">
+   <div class="org-meta">
+      <h3>Pramuka Gugus Depan 01</h3>
+      <p class="org-role">Ketua Regu Putera</p>
+      <p class="org-place">SMP Negeri 1 Tambun Selatan</p>
+   </div>
+   <span class="year">2022 — 2024</span>
+</div>
+```
+
+#### Cara Menambah Organisasi Baru:
+Duplikat satu blok `<div class="org-item">...</div>` lalu paste di bawah organisasi sebelumnya (sebelum `</div>` penutup `org-grid`).
+
+#### Hasil:
+![](gambar/organisasi-putih.png)
+
+---
+
+### Langkah 9: Mengubah Informasi Kontak & Footer
 
 #### Letak Kode:
 
-1. **Email (Baris 717):**
+1. **Email (Baris 909):**
 ```html
 <a href="mailto:email@anda.com">email@anda.com</a>
 ```
@@ -289,7 +383,7 @@ Ganti dengan email kamu:
 <a href="mailto:budi@email.com">budi@email.com</a>
 ```
 
-2. **No Telepon / WA (Baris 734):**
+2. **No Telepon / WA (Baris 926):**
 ```html
 <a href="tel:+6281234567890">+62 812-3456-7890</a>
 ```
@@ -298,7 +392,7 @@ Ganti dengan nomor WA kamu:
 <a href="tel:+6289876543210">+62 898-7654-3210</a>
 ```
 
-3. **Lokasi (Baris 752):**
+3. **Lokasi (Baris 944):**
 ```html
 <span>Jakarta, Indonesia</span>
 ```
@@ -307,7 +401,7 @@ Ganti dengan kota/domisili kamu:
 <span>Bekasi, Indonesia</span>
 ```
 
-4. **Teks Hak Cipta Footer (Baris 803 - 805):**
+4. **Teks Hak Cipta Footer (Baris 995 - 997):**
 ```html
 <p>
    &copy; 2026 Nama Anda. Dibuat dengan HTML, CSS, dan JavaScript.
@@ -325,7 +419,7 @@ Ganti dengan namamu:
 
 ---
 
-### Langkah 8: Mengkustomisasi Tema Warna (CSS Variable)
+### Langkah 10: Mengkustomisasi Tema Warna (CSS Variable)
 
 Website ini menggunakan **CSS Variables** di bagian atas style. Kamu bisa dengan mudah mengubah seluruh skema warna website hanya dengan mengganti beberapa kode warna di dalam `:root`!
 
@@ -374,6 +468,5 @@ Cari bagian `<style>` di dalam `<head>`:
    - Nama dan foto profil sudah sesuai.
    - Menu navigasi atas saat diklik menggulung secara halus (*smooth scroll*) ke bagian yang dituju.
    - Gambar proyek sudah tampil dengan benar.
-   - Informasi pendidikan, proyek, kontak, dan footer sudah diperbarui.
+   - Informasi pendidikan, proyek, prestasi, organisasi, kontak, dan footer sudah diperbarui.
    - Tema warna sesuai dengan selera kamu!
-
